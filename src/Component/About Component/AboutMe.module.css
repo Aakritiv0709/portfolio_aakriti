@@ -1,0 +1,70 @@
+.parentclass {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 100%;
+  min-height: 600px;
+  margin-top: 10px;
+}
+.childclass1 {
+  max-width: 45%;
+  justify-content: space-evenly;
+  align-self: flex-start;
+  margin-top: 1rem;
+}
+.childclass2 h3 {
+  color: white;
+  font-size: 3.5rem;
+  margin-bottom: 0.8rem;
+}
+.childclass2 {
+  max-width: 45%;
+  margin-top: 1rem;
+  justify-content: space-evenly;
+  align-self: flex-start;
+}
+.childclass2 p {
+  color: rgb(163, 162, 162);
+  margin-bottom: 3rem;
+}
+img {
+  width: 100%;
+}
+@media screen and (max-width: 998px) {
+  .parentclass {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .childclass1 {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+  .childclass2 {
+    max-width: 100%;
+    padding: 0 20px;
+    margin-top: 3rem;
+  }
+  .childclass2 p {
+    font-size: 21px;
+  }
+}
+
+.resume_button {
+  padding: 10px 24px;
+  background-color: #97c584;
+  border: 2px solid #97c584;
+  border-radius: 3px;
+  font-weight: 600;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.resume_button:hover {
+  background-color: black;
+  border: 2px solid #97c584;
+  color: #97c584;
+  cursor: pointer;
+  transition: 0.3s ease;
+}

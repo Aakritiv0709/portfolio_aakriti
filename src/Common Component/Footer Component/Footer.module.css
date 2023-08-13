@@ -1,0 +1,95 @@
+.parent {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.heading h1 {
+  font-size: 40px;
+  color: white;
+}
+.child1 {
+  max-width: 50%;
+  margin-bottom: 5rem;
+}
+.child1 p {
+  color: gray;
+}
+.child2 {
+  min-width: 40%;
+}
+
+.form_field input {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: transparent;
+  outline: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  margin-bottom: 4px;
+  border-color: white;
+  border-radius: 3px;
+  margin-bottom: 3rem;
+}
+.form_field button {
+  background-color: #97c584;
+  color: black;
+  border: none;
+  border-radius: 5px;
+
+  padding: 10px 30px;
+  cursor: pointer;
+  font-weight: 500;
+}
+.form_field button:hover {
+  background-color: black;
+  border: 2px solid #97c584;
+  color: #97c584;
+}
+.copyright {
+  color: white;
+  text-align: center;
+}
+.horizontal {
+  color: white;
+}
+.child1 .info {
+  color: white;
+  margin-top: 2rem;
+}
+.child1 .icons {
+  margin-right: 10px;
+}
+.follow_us {
+  font-size: 18px; /* Font size for the "Follow Us" text */
+  margin-top: 10px;
+  margin-top: 2rem; /* Spacing above the text */
+}
+.follow_us span {
+  color: white;
+}
+.follow_us .icon_link {
+  color: #fff; /* Icon color */ /* Remove underlines from links */
+  margin: 0 8px;
+  text-decoration: white; /* Spacing between icons */
+}
+@media screen and (max-width: 600px) {
+  .form_field {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 778px) {
+  .parent {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .parent .child1 {
+    max-width: 100%;
+  }
+  .parent .child2 {
+    max-width: 100%;
+  }
+}

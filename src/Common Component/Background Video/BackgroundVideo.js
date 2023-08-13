@@ -2,6 +2,7 @@ import React from 'react'
 import Backgroundvideo from "../../assets/Background.mp4"
 import BackgroundvideoStyles from "../Background Video/Backgroundvideo.module.css"
 import Header from '../Header Component/Header'
+import HeroContent from '../Header Component/HeroContent'
 const BackgroundVideo = () => {
     return (
         <>
@@ -12,7 +13,7 @@ const BackgroundVideo = () => {
                     <source src={Backgroundvideo} type="video/mp4" />
                 </video>
                 <Header />
-
+                <HeroContent />
             </div>
         </>
     )
