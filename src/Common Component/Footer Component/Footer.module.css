@@ -32,20 +32,27 @@
   border-radius: 3px;
   margin-bottom: 3rem;
 }
-.form_field button {
+.button {
+  padding: 10px 24px;
   background-color: #97c584;
-  color: black;
-  border: none;
-  border-radius: 5px;
-
-  padding: 10px 30px;
+  border: 2px solid #97c584;
+  border-radius: 3px;
+  font-weight: 600;
+  font-size: 20px;
   cursor: pointer;
-  font-weight: 500;
+  transition: 0.3s ease;
+  color: black;
 }
-.form_field button:hover {
-  background-color: black;
+.button:hover {
+  background-color: white;
   border: 2px solid #97c584;
   color: #97c584;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.button a {
+  text-decoration: none;
+  color: black;
 }
 .copyright {
   color: white;

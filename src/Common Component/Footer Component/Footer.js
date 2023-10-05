@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 const Footer = () => {
     return (
@@ -17,27 +17,26 @@ const Footer = () => {
             <div className={FooterStyles.parent}>
                 <div className={FooterStyles.child1}>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa
-                        mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien
-                        fringilla, mattis ligula consectetur, ultrices mauris.
+                        Greetings!, I'm a B.Tech under graduate From Gyan Ganga Institute of
+                        Technology .I'm currently having the "Front-End Developer" profile,
+                        But my future plans are to step into full stack development.
                     </p>
                     <p className={FooterStyles.info}>
                         <FontAwesomeIcon icon={faPhone} className={FooterStyles.icons} />
-                        <span>Call us at: 123-456-7890</span>
+                        <span>Call us at: 1-000-000-000</span>
                     </p>
                     <p className={FooterStyles.info}>
                         <FontAwesomeIcon icon={faEnvelope} className={FooterStyles.icons} />
-                        <span>Contact us: example@example.com</span>
+                        <span>Contact us: aakritiv0709@gmail.com</span>
                     </p>
                     <p className={FooterStyles.info}>
                         <FontAwesomeIcon icon={faMapMarkerAlt} className={FooterStyles.icons} />
-                        <span>Our Location: 123 Main St, City</span>
+                        <span>Location: vijaynagar jabalpur</span>
                     </p>
                     <div className={FooterStyles.follow_us}>
                         <span>Follow Us :</span>
-                        <Link href="/"> <FontAwesomeIcon icon={faLinkedin} className={FooterStyles.icon_link} /></Link>
-
-                        <Link href="/"> <FontAwesomeIcon icon={faGithub} className={FooterStyles.icon_link} /></Link>
+                        <Link href="https://www.linkedin.com/in/aakriti-pandey-076abb26b/"> <FontAwesomeIcon icon={faLinkedin} className={FooterStyles.icon_link} /></Link>
+                        <Link href="https://github.com/Aakritiv0709"> <FontAwesomeIcon icon={faGithub} className={FooterStyles.icon_link} /></Link>
                     </div>
 
                 </div>
@@ -53,14 +52,14 @@ const Footer = () => {
                     </div>
 
                     <div className={FooterStyles.form_field}>
-                        <button type="submit">Submit</button>
+                        <button className={FooterStyles.button}><NavLink to="https://www.linkedin.com/in/aakriti-pandey-076abb26b/">Submit</NavLink></button>
                     </div>
                 </div>
             </div>
 
             <div className="container">
                 <hr className={FooterStyles.horizontal}></hr>
-                <p className={FooterStyles.copyright}>copyright &copy; Aakriti Rajul Verma. All Rights Reserved</p>
+                <p className={FooterStyles.copyright}>copyright &copy; Aakriti Pandey. All Rights Reserved</p>
             </div>
 
         </footer>

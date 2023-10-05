@@ -1,0 +1,81 @@
+/* ProjectCard.module.css */
+.project_card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px; /* Add spacing between images */
+  padding: 20px; /* Add padding to the card container */
+  background-color: black; /* Background color for the card */
+  border: 2px solid #383838; /* Border for the card */
+  border-radius: 10px;
+  margin: 20px 0 2rem 0; /* Rounded corners for the card */
+}
+
+.project_card > div {
+  flex-basis: calc(
+    33.33% - 20px
+  ); /* Set the width for each card item, accounting for the gap */
+  padding: 10px; /* Add padding inside each card item */
+  border: 1px solid #4e4d4d; /* Border for each card item */
+  border-radius: 5px;
+  color: white;
+  margin: 10px 0; /* Rounded corners for each card item */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow to each card item */
+  transition: transform 0.2s ease-in, box-shadow 0.2s ease-in; /* smooth transitions for hover effects */
+}
+
+.project_card > div:hover {
+  transform: translateY(-5px); /* Lift the card slightly on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a deeper shadow on hover */
+}
+
+.project_card img {
+  max-width: 100%;
+  border-radius: 5px; /* Rounded corners for images */
+}
+.heading {
+  color: white;
+  text-align: center;
+  margin: 10px 0;
+}
+.project_name {
+  color: #97c584;
+  margin-top: 5px;
+}
+.project_description {
+  color: rgb(189, 184, 184);
+  font-weight: 400;
+}
+/* Add media queries for responsive design */
+@media (max-width: 768px) {
+  .project_card {
+    flex-direction: column; /* Stack card items in a column on smaller screens */
+  }
+
+  .project_card > div {
+    flex-basis: 100%; /* Full width for card items on smaller screens */
+  }
+}
+
+.button {
+  padding: 7px 12px;
+  background-color: #97c584;
+  border: 2px solid #97c584;
+  border-radius: 3px;
+  font-weight: 600;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  color: black;
+}
+.button:hover {
+  background-color: white;
+  border: 2px solid #97c584;
+  color: #97c584;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.button a {
+  text-decoration: none;
+  color: black;
+}

@@ -1,0 +1,129 @@
+.parent {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: white;
+  min-height: 200px;
+  align-items: center;
+  text-align: start;
+  margin: 2rem 0;
+}
+.child1 {
+  max-width: 32%;
+}
+.child2 {
+  max-width: 32%;
+}
+
+.child1 h1 {
+  font-size: 1.8rem;
+  color: black;
+  font-weight: 500;
+}
+.child2 p {
+  color: rgb(172, 33, 33);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.child3 button {
+  padding: 10px 50px;
+  background-color: #97c584;
+  border: 2px solid #97c584;
+  border-radius: 3px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+  text-align: center;
+}
+.child3 button:hover {
+  background-color: black;
+  border: 2px solid #97c584;
+  color: #97c584;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+@media screen and ((min-width: 780px) and (max-width:1024px)) {
+  .parent {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 2rem;
+  }
+  .child1 {
+    max-width: 50%;
+    margin-bottom: 1rem;
+  }
+  .child2 {
+    max-width: 50%;
+    margin-bottom: 1rem;
+  }
+  .child3 {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  .child3 button {
+    display: block;
+    width: 100%;
+    padding: 6px 50px;
+    background-color: #97c584;
+    border: 2px solid #97c584;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+    text-align: center;
+  }
+  .child3 button:hover {
+    background-color: black;
+    border: 2px solid #97c584;
+    color: #97c584;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+}
+@media screen and (max-width: 779px) {
+  .parent {
+    display: flex;
+    justify-content: center;
+
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    padding: 2rem;
+  }
+  .child1 {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+  .child2 {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+  .child3 {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  .child3 button {
+    display: block;
+    width: 100%;
+    padding: 6px 50px;
+    background-color: #97c584;
+    border: 2px solid #97c584;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+    text-align: center;
+  }
+  .child3 button:hover {
+    background-color: black;
+    border: 2px solid #97c584;
+    color: #97c584;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+}

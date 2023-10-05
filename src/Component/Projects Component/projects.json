@@ -1,0 +1,30 @@
+[
+  {
+    "projectId": 1,
+    "projectName": "DV Minerals cables web app",
+    "projectImage": "../../../images/Project-1.jpg",
+    "description": "Keep track of your cable and wire inventory with ease. Maintain a central database of available materials, including detailed specifications and stock levels. Avoid delays and shortages by proactively managing your supplies.This website is created using Html, Css, JavaScript.",
+    "link": "https://aakritiv0709.github.io/DV-Minerals/"
+  },
+  {
+    "projectId": 2,
+    "projectName": "Silon-E-Commerce web app",
+    "projectImage": "../../../images/Project-2.jpg",
+    "description": "Discover a world of convenience, variety, and unbeatable deals at our Ecommerce Website. We pride ourselves on being your ultimate online shopping destination, offering a vast selection of products from top brands across diverse categories.",
+    "link": "https://aakritiv0709.github.io/Silon-E-Commerece-Demo/"
+  },
+  {
+    "projectId": 3,
+    "projectName": "Sample Project",
+    "projectImage": "../../../images/Project-3.jpg",
+    "description": "Discover the extraordinary work and talent of Aakriti pandey through this captivating portfolio website.This web Application serves as a digital gallery, providing an immersive journey into my creative world and this web application is created using ReactJS.",
+    "link": "https://aakritiportfolio.netlify.app/"
+  },
+  {
+    "projectId": 4,
+    "projectName": "AR-CRUD operation application",
+    "projectImage": "../../../images/Project-4.jpg",
+    "description": "This CRUD Operation Application is a software system designed to perform basic Create, Read, Update, and Delete (CRUD) operations on a dataset.",
+    "link": "https://ar-crudoperation.netlify.app/"
+  }
+]

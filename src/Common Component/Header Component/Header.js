@@ -1,44 +1,52 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import HeaderStyles from "../Header Component/Header.module.css"
+import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
+import HeaderStyles from './Header.module.css'; // Make sure the path is correct
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
-function Header() {
-    return (
-        <header>
-            <Navbar collapseOnSelect expand="lg" className={HeaderStyles.navbar} >
-                <Container>
-                    <Navbar.Brand href="/" className={HeaderStyles.logo}>ChauMau</Navbar.Brand>
-                    <Navbar.Toggle aria-controls="responsive-navbar-nav" className={HeaderStyles.hamburgerparent}><FontAwesomeIcon icon={faBars} className={HeaderStyles.hamburger} /></Navbar.Toggle>
-                    <Navbar.Collapse id="responsive-navbar-nav">
-                        <Nav className="me-auto">
 
-                        </Nav>
-                        <Nav>
-                            <Nav.Link href="/" className={HeaderStyles.navlinks}>Home</Nav.Link>
-                            <Nav.Link eventKey={2} href="/about" className={HeaderStyles.navlinks}>
-                                About Me
-                            </Nav.Link>
-                            <Nav.Link eventKey={2} href="/projects" className={HeaderStyles.navlinks}>
-                                Projects
-                            </Nav.Link>
-                            <Nav.Link eventKey={2} href="/contact" className={HeaderStyles.navlinks}>
-                                Contact Us
-                            </Nav.Link>
-                        </Nav>
-                    </Navbar.Collapse>
-                </Container>
-            </Navbar>
+const Header = () => {
+  const [showNavbar, setShowNavbar] = useState(false);
 
-        </header>
-    );
-}
+  const handleShowNavbar = () => {
+    setShowNavbar(!showNavbar);
+  };
+
+  return (
+    <div className={HeaderStyles.navbar}>
+      <div className={HeaderStyles.container}>
+        <div className={HeaderStyles.logo}>chau</div>
+
+        <div className={HeaderStyles.menu_icon} onClick={handleShowNavbar}>
+          <FontAwesomeIcon icon={faBars} />
+        </div>
+
+        <div className={`${HeaderStyles.nav_element} ${showNavbar && HeaderStyles.active}`}>
+          <ul>
+            <li>
+              <NavLink to="/" activeclassname="active">
+                Home
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/about" activeclassname="active">
+                About
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/contact" activeclassname="active">
+                Contact
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/projects" activeclassname="active">
+                Project
+              </NavLink>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default Header;
-
-
-
-
-
