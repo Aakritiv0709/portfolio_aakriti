@@ -4,8 +4,8 @@
   align-items: center;
   flex-wrap: wrap;
   max-width: 100%;
-  min-height: 600px;
-  margin-top: 10px;
+  min-height: 400px;
+  margin-top: 2rem;
 }
 .childclass1 {
   max-width: 45%;
@@ -15,7 +15,7 @@
 }
 .childclass2 h3 {
   color: white;
-  font-size: 3.5rem;
+  font-size: 2rem;
   margin-bottom: 0.8rem;
 }
 .childclass2 {
@@ -27,9 +27,12 @@
 .childclass2 p {
   color: rgb(163, 162, 162);
   margin-bottom: 3rem;
+  font-size: 17px;
 }
 img {
   width: 100%;
+  margin-top: 0.8rem;
+  border-radius: 5px;
 }
 @media screen and (max-width: 998px) {
   .parentclass {
@@ -39,32 +42,14 @@ img {
   }
   .childclass1 {
     max-width: 100%;
-    padding: 0 20px;
+    padding: 0 15px;
   }
   .childclass2 {
     max-width: 100%;
-    padding: 0 20px;
+    padding: 0 15px;
     margin-top: 3rem;
   }
   .childclass2 p {
-    font-size: 21px;
+    font-size: 17px;
   }
-}
-
-.resume_button {
-  padding: 10px 24px;
-  background-color: #97c584;
-  border: 2px solid #97c584;
-  border-radius: 3px;
-  font-weight: 600;
-  font-size: 20px;
-  cursor: pointer;
-  transition: 0.3s ease;
-}
-.resume_button:hover {
-  background-color: black;
-  border: 2px solid #97c584;
-  color: #97c584;
-  cursor: pointer;
-  transition: 0.3s ease;
 }

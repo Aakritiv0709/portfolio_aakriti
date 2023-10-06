@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <div className={HeaderStyles.navbar}>
       <div className={HeaderStyles.container}>
-        <div className={HeaderStyles.logo}>chau</div>
+        <div className={HeaderStyles.logo}>Portfolio</div>
 
         <div className={HeaderStyles.menu_icon} onClick={handleShowNavbar}>
           <FontAwesomeIcon icon={faBars} />

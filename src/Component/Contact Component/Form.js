@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import ContactStyles from "./Form.module.css"
 import { Container, Form, Button } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
 const ContactForm = () => {
     const [fullName, setFullName] = useState('');
     const [email, setEmail] = useState('');
@@ -13,24 +14,24 @@ const ContactForm = () => {
     };
     return (
         <Container className={ContactStyles.formContainer}>
-            <h2 className={ContactStyles.heading}>Contact Us</h2>
+            <h2 className={ContactStyles.heading}>Contact Me </h2>
             <Form onSubmit={handleSubmit}>
                 <Form.Group controlId="fullName">
                     <Form.Label className={ContactStyles.labels}>Full Name</Form.Label>
                     <Form.Control
                         type="text"
-                        placeholder="Enter your full name"
+                        placeholder="Aakriti pandey"
                         value={fullName}
-                        onChange={(e) => setFullName(e.target.value)}
+                        onChange={(e) => setFullName(e.target.value)} readOnly
                     />
                 </Form.Group>
                 <Form.Group controlId="email">
                     <Form.Label className={ContactStyles.labels}>Email</Form.Label>
                     <Form.Control
                         type="email"
-                        placeholder="Enter your email"
+                        placeholder="aakritiv0709@gmail.com"
                         value={email}
-                        onChange={(e) => setEmail(e.target.value)}
+                        onChange={(e) => setEmail(e.target.value)} readOnly
                     />
                 </Form.Group>
 
@@ -38,9 +39,9 @@ const ContactForm = () => {
                     <Form.Label className={ContactStyles.labels}>Address</Form.Label>
                     <Form.Control
                         type="text"
-                        placeholder="Enter your address"
+                        placeholder="Vijaynagar, Jabalpur, Madhya Pradesh"
                         value={address}
-                        onChange={(e) => setAddress(e.target.value)}
+                        onChange={(e) => setAddress(e.target.value)} readOnly
                     />
                 </Form.Group>
 
@@ -49,15 +50,13 @@ const ContactForm = () => {
                     <Form.Control
                         as="textarea"
                         rows={4}
-                        placeholder="Enter your message"
+                        placeholder="I'm a Frontend developer"
                         value={message}
-                        onChange={(e) => setMessage(e.target.value)}
+                        onChange={(e) => setMessage(e.target.value)} readOnly
                     />
                 </Form.Group>
 
-                <Button type="submit" className={ContactStyles.button}>
-                    Submit
-                </Button>
+                <button className={ContactStyles.button}><NavLink to="https://www.linkedin.com/in/aakriti-pandey-076abb26b/">Contact Me</NavLink></button>
             </Form>
         </Container>
     )

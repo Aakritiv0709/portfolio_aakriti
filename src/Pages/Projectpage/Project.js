@@ -10,7 +10,7 @@ const Project = () => {
         <div>
             <Header />
             <ProjectCard heading="My Projects" />
-            <Requirement />
+            {/*<Requirement />*/}
             <VideoAnimation />
             <Footer />
         </div>

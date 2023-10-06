@@ -17,17 +17,26 @@ const VideoAnimation = () => {
                     </video>
                 </div>
                 <div className={VideoAnimationStyles.child2}>
-                    <h1>Why book our services?</h1>
-                    <p>
-                        Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
-                        suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur quis
-                        autem vel eum iure{" "}
-                    </p>
+                    <h1>About Frontend Developer</h1>
+
                     <ul>
-                        <li>Lorem ipsum dolor sit amet</li>
-                        <li>Lorem ipsum dolor sit amet</li>
-                        <li>Lorem ipsum dolor sit amet</li>
-                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>
+                            Frontend developers are responsible for creating the visual
+                            elements of a website or web application that users interact with.
+                            They use HTML, CSS, and JavaScript to build the layout, design,
+                            and interactivity of the user interface.
+                        </li>
+                        <li>
+                            Frontend developers ensure that web applications and sites are
+                            responsive, meaning they adapt to different screen sizes and
+                            devices
+                        </li>
+                        <li>
+                            Frontend developers focus on optimizing the performance of web
+                            applications by reducing page load times and minimizing resource
+                            requests. They may employ techniques like code splitting, lazy
+                            loading, and image optimization to achieve this.
+                        </li>
                     </ul>
                 </div>
             </div>

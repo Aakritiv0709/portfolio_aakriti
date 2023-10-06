@@ -8,7 +8,7 @@
   background-color: black; /* Background color for the card */
   border: 2px solid #383838; /* Border for the card */
   border-radius: 10px;
-  margin: 20px 0 2rem 0; /* Rounded corners for the card */
+  margin: 2rem 0 2rem 0; /* Rounded corners for the card */
 }
 
 .project_card > div {
@@ -36,15 +36,19 @@
 .heading {
   color: white;
   text-align: center;
-  margin: 10px 0;
+  margin: 1rem 0;
 }
 .project_name {
   color: #97c584;
   margin-top: 5px;
+  font-size: 24px;
 }
 .project_description {
   color: rgb(189, 184, 184);
   font-weight: 400;
+}
+.projectcard {
+  min-height: 420px;
 }
 /* Add media queries for responsive design */
 @media (max-width: 768px) {
@@ -67,6 +71,7 @@
   cursor: pointer;
   transition: 0.3s ease;
   color: black;
+  margin-bottom: 1rem;
 }
 .button:hover {
   background-color: white;

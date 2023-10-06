@@ -30,7 +30,15 @@
   justify-content: space-between;
   list-style-type: none;
 }
-
+.nav_element ul li {
+  padding: 4px 8px;
+}
+.nav_element ul li:hover {
+  background-color: #97c584;
+  color: black;
+  border-radius: 2px;
+  transition: 0.3s ease-in;
+}
 .nav_element ul li:not(:last-child) {
   margin-right: 50px;
 }
@@ -77,7 +85,7 @@
     position: absolute;
     right: 0;
     top: 60px;
-    background-color: #fef7e5;
+    background-color: #97c584;
     width: 0px;
     color: black;
     height: calc(100vh - 60px);
@@ -87,8 +95,10 @@
   }
   .nav_element ul a {
     color: black;
-    font-size: 2rem;
+    font-weight: 500;
+    font-size: 1rem;
   }
+
   .nav_element.active {
     width: 270px;
   }
@@ -96,12 +106,10 @@
   .nav_element ul {
     display: flex;
     flex-direction: column;
-    color: black;
   }
 
   .nav_element ul li {
     margin-right: unset;
     margin-top: 22px;
-    color: black;
   }
 }

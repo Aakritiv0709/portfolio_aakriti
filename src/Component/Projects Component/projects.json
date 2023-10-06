@@ -15,7 +15,7 @@
   },
   {
     "projectId": 3,
-    "projectName": "Sample Project",
+    "projectName": "My Portfolio",
     "projectImage": "../../../images/Project-3.jpg",
     "description": "Discover the extraordinary work and talent of Aakriti pandey through this captivating portfolio website.This web Application serves as a digital gallery, providing an immersive journey into my creative world and this web application is created using ReactJS.",
     "link": "https://aakritiportfolio.netlify.app/"
