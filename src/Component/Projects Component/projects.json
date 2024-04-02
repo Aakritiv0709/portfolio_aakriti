@@ -15,10 +15,10 @@
   },
   {
     "projectId": 3,
-    "projectName": "My Portfolio",
+    "projectName": "Video Streaming Application",
     "projectImage": "../../../images/Project-3.jpg",
-    "description": "Discover the extraordinary work and talent of Aakriti pandey through this captivating portfolio website.This web Application serves as a digital gallery, providing an immersive journey into my creative world and this web application is created using ReactJS.",
-    "link": "https://aakritiportfolio.netlify.app/"
+    "description": "Successfully integrated a Rapid API into the frontend of the application. It is a clone 'YouTube' for video streaming. Designed and implemented an intuitive and user-friendly interface for users to interact with video streaming app.",
+    "link": "https://videostreamingapplication.netlify.app/"
   },
   {
     "projectId": 4,
